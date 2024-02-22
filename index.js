@@ -83,9 +83,9 @@ $(window).on('scroll', function(){
     var a = document.getElementById('a')
 
     if( down >= 100){
-        a.style.fontSize = '32px';
+        document.getElementsByClassName('navi')[0].classList.add('scroll');
     } else {
-        a.style.fontSize = '25px';
+        document.getElementsByClassName('navi')[0].classList.remove('scroll');
     }
 
     // console.log();

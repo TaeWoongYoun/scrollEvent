@@ -15,6 +15,16 @@ nav{
     background-color: aliceblue;
     line-height: 60px;
     z-index: 10;
+    transition: all 1s;
+}
+
+.scroll{
+    background-color: aqua;
+}
+
+.scroll a{
+    font-size: 32px;
+    font-weight: 900;
 }
 
 section{
@@ -23,5 +33,5 @@ section{
 
 nav a{
     font-size: 25px;
-
+    transition: all 1s;
 }
