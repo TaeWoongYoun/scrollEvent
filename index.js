@@ -8,12 +8,6 @@
 //     $(window).scrollTop()
 // })
 
-
-// div의 스크롤바 내린 양 + 100== div의 실제높이
-// $('lorem').om('scroll', function(){
-//     document.querySelector('.lorem').scrollTop;
-// })
-
 // function window(){
 //     console.log('스크롤 감지');
 // }
@@ -66,3 +60,19 @@
 //         elements[0].style.color = 'aqua';
 //     }
 // });
+
+// 숙제 2번 완료
+// 2. 회원약관 박스를 거의 끝까지 스크롤하면 alert를 띄워줍시다.
+$('.lorem').on('scroll', function(){
+    var 내린양 = document.querySelector('.lorem').scrollTop+100;
+    var 실제높이 = document.querySelector('.lorem').scrollHeight;
+
+    if( 내린양 == 실제높이 ){
+        alert('ㅊㅊ 정독함')
+    }
+
+    console.log(내린양, 실제높이);
+})
+
+// 숙제 1번 한글로 적어보기
+만약에 스크롤바를
