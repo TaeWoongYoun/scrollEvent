@@ -14,9 +14,20 @@
 // })
 
 
+window.addEventListener('scroll', function(){
+    // getElementsByClassName은 여러 요소를 반환하므로 배열 형태로 반환됩니다.
+    // 따라서 인덱스를 사용하여 해당 요소에 접근해야 합니다.
+    var elements = document.getElementsByClassName('navbar-brand');
 
-function window(){
-    console.log('스크롤 감지');
-}
+    // 예시로 첫 번째 요소에 대해 fontSize를 변경합니다.
+    if (elements.length > 0) {
+        elements[0].style.fontSize = '32px';
+    }
+});
 
-window.addEventListener('scroll', window);
+
+// function window(){
+//     console.log('스크롤 감지');
+// }
+
+// window.addEventListener('scroll', window);
