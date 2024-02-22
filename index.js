@@ -22,6 +22,7 @@ window.addEventListener('scroll', function(){
     // 예시로 첫 번째 요소에 대해 fontSize를 변경합니다.
     if (elements.length > 0) {
         elements[0].style.fontSize = '32px';
+        elements[0].style.color = 'aqua';
     }
 });
 
