@@ -102,4 +102,12 @@
 // 이런거 만들어보면 재미있을듯요 
 // 실은 간단해서 재미없습니다 
 
-// $(html).on
+// 만약에 1만큼 스크롤하면 line의 width를 1%를 증가시킴 width를 시작 전 0으로 고정해두기. 내일하겠습니당.
+
+$(window).on('scroll', function(){
+    var 스크롤양 = Math.floor($('html')[0].scrollTop)+1;;
+    var 실제높이 = $('html')[0].scrollHeight;
+    var 스크롤바높이 = $('html')[0].clientHeight;
+
+    console.log(스크롤양+스크롤바높이, 실제높이,);
+})
