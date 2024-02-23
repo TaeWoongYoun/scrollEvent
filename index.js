@@ -61,6 +61,24 @@
 //     }
 // });
 
+// 숙제 1번 한글로 적어보기
+// 만약에 스크롤바를 100px 내리면 로고의 폰트사이즈를 작게 만들기
+// 그렇지 않다면 로고의 폰트사이즈를 원래대로 설정하기
+
+$(window).on('scroll', function(){
+    var down = $(window).scrollTop();
+    var a = document.getElementById('a')
+    var event = document.getElementsByClassName('navi')[0].classList
+
+    if( down >= 100){
+        event.add('scroll');
+    } else {
+        event.remove('scroll');
+    }
+
+    // console.log();
+})
+
 // 숙제 2번 완료
 // 2. 회원약관 박스를 거의 끝까지 스크롤하면 alert를 띄워줍시다.
 // $('.lorem').on('scroll', function(){
@@ -73,20 +91,3 @@
 
 //     console.log(내린양, 실제높이);
 // })
-
-// 숙제 1번 한글로 적어보기
-// 만약에 스크롤바를 100px 내리면 로고의 폰트사이즈를 작게 만들기
-// 그렇지 않다면 로고의 폰트사이즈를 원래대로 설정하기
-
-$(window).on('scroll', function(){
-    var down = $(window).scrollTop();
-    var a = document.getElementById('a')
-
-    if( down >= 100){
-        document.getElementsByClassName('navi')[0].classList.add('scroll');
-    } else {
-        document.getElementsByClassName('navi')[0].classList.remove('scroll');
-    }
-
-    // console.log();
-})
