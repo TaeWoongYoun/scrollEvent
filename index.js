@@ -65,19 +65,19 @@
 // 만약에 스크롤바를 100px 내리면 로고의 폰트사이즈를 작게 만들기
 // 그렇지 않다면 로고의 폰트사이즈를 원래대로 설정하기
 
-$(window).on('scroll', function(){
-    var down = $(window).scrollTop();
-    var a = document.getElementById('a')
-    var event = document.getElementsByClassName('navi')[0].classList
+// $(window).on('scroll', function(){
+//     var down = $(window).scrollTop();
+//     var a = document.getElementById('a');
+//     var event = document.getElementsByClassName('navi')[0].classList;
 
-    if( down >= 100){
-        event.add('scroll');
-    } else {
-        event.remove('scroll');
-    }
+//     if( down >= 100){
+//         event.add('scroll');
+//     } else {
+//         event.remove('scroll');
+//     }
 
-    // console.log();
-})
+//     // console.log();
+// })
 
 // 숙제 2번 완료
 // 2. 회원약관 박스를 거의 끝까지 스크롤하면 alert를 띄워줍시다.
@@ -91,3 +91,15 @@ $(window).on('scroll', function(){
 
 //     console.log(내린양, 실제높이);
 // })
+
+
+// 숙제 3번
+// 페이지 내릴 때 마다 페이지를 얼마나 읽었는지 진척도를 알려주는 UI 같은건 어떻게 만들면 될까요?
+// 까만색의 가로로 긴 div 박스 하나 만들고 
+// 페이지를 1% 읽으면 div 박스 길이는 1%
+// 페이지를 50%정도 읽으면 div 박스 길이는 50% 
+// 페이지 다 읽으면 div 박스 길이는 100% 
+// 이런거 만들어보면 재미있을듯요 
+// 실은 간단해서 재미없습니다 
+
+// $(html).on
